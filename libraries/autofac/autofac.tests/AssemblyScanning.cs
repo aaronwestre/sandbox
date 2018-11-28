@@ -7,7 +7,7 @@ using mathers;
 
 namespace autofac.tests
 {
-    public class Basics
+    public class AssemblyScanning
     {
         [Fact]
         public void ResolveAllImplementationsOfAnInterfaceInAnAssembly()

@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\mathers\mathers.csproj" />
+    <ProjectReference Include="..\sounders\sounders.csproj" />
   </ItemGroup>
 
 </Project>

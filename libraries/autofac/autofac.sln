@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "autofac.tests", "autofac.te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "mathers", "mathers\mathers.csproj", "{9B456BBF-D068-41FF-8585-CD7DEA9DAA29}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sounders", "sounders\sounders.csproj", "{89C9F41F-967E-48E9-80F5-AFB0642B9DFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{9B456BBF-D068-41FF-8585-CD7DEA9DAA29}.Release|x64.Build.0 = Release|Any CPU
 		{9B456BBF-D068-41FF-8585-CD7DEA9DAA29}.Release|x86.ActiveCfg = Release|Any CPU
 		{9B456BBF-D068-41FF-8585-CD7DEA9DAA29}.Release|x86.Build.0 = Release|Any CPU
+		{89C9F41F-967E-48E9-80F5-AFB0642B9DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89C9F41F-967E-48E9-80F5-AFB0642B9DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89C9F41F-967E-48E9-80F5-AFB0642B9DFE}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{89C9F41F-967E-48E9-80F5-AFB0642B9DFE}.Debug|x64.Build.0 = Debug|Any CPU
+		{89C9F41F-967E-48E9-80F5-AFB0642B9DFE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{89C9F41F-967E-48E9-80F5-AFB0642B9DFE}.Debug|x86.Build.0 = Debug|Any CPU
+		{89C9F41F-967E-48E9-80F5-AFB0642B9DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89C9F41F-967E-48E9-80F5-AFB0642B9DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89C9F41F-967E-48E9-80F5-AFB0642B9DFE}.Release|x64.ActiveCfg = Release|Any CPU
+		{89C9F41F-967E-48E9-80F5-AFB0642B9DFE}.Release|x64.Build.0 = Release|Any CPU
+		{89C9F41F-967E-48E9-80F5-AFB0642B9DFE}.Release|x86.ActiveCfg = Release|Any CPU
+		{89C9F41F-967E-48E9-80F5-AFB0642B9DFE}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
