@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\alt.sounders\alt.sounders.csproj" />
     <ProjectReference Include="..\mathers\mathers.csproj" />
     <ProjectReference Include="..\sounders\sounders.csproj" />
   </ItemGroup>
