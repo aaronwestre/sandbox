@@ -1,8 +1,10 @@
 module Tests
 
-open System
 open Xunit
+open reactive
 
 [<Fact>]
-let ``My test`` () =
-    Assert.True(true)
+let ``Zero equals zero`` () =
+    let zero = 0
+    Assert.Equal(0, zero)
+
