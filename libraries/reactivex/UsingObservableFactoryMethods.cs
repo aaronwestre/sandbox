@@ -1,6 +1,9 @@
 using System;
+using System.Collections.Generic;
 using System.Reactive;
+using System.Reactive.Disposables;
 using System.Reactive.Linq;
+using System.Reactive.Subjects;
 using Microsoft.Reactive.Testing;
 using Xunit;
 
@@ -19,6 +22,20 @@ namespace reactivex
             var observedValue = 0;
             var observer = Observer.Create<int>(state => observedValue = state);
             counter.Subscribe(observer);
+            Assert.Equal(999, observedValue);
+        }
+
+        [Fact]
+        public void Driving_an_observable_explicitly()
+        {
+            var broadcaster = new Subject<int>();
+            var observedValue = 0;
+            var observer = Observer.Create((int nextValue) => observedValue = nextValue);
+            var subscription = broadcaster.AsObservable().Subscribe(observer);
+            broadcaster.OnNext(996);
+            broadcaster.OnNext(997);
+            broadcaster.OnNext(998);
+            broadcaster.OnNext(999);
             Assert.Equal(999, observedValue);
         }
 
