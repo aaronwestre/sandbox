@@ -30,6 +30,7 @@ This list was harvested from [Wikipedia](https://en.wikipedia.org/wiki/List_of_a
  - Nash
  - Olmstead
  - Paxton
+ - Piranesi
  - Pugin
  - Richardson
  - Rossi
