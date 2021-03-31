@@ -2,8 +2,25 @@ using System.Collections.Generic;
 
 namespace types
 {
-    public record Arm(System.Guid Id, double Length, IReadOnlyList<Hand> Hands);
-    public record Hand(System.Guid Id, string Chirality, IReadOnlyList<Finger> Fingers);
+    public class Arm
+    {
+        public System.Guid Id { get; init; }
+        public double Length { get; init; }
+        public IReadOnlyList<Hand> Hands { get; init; }
+    }
 
-    public record Finger(System.Guid Id, string DigitName);
+    public class Hand
+    {
+        public System.Guid Id { get; init; }
+        public string Chirality { get; init; }
+        public IReadOnlyList<Finger> Fingers { get; init; }
+        public IReadOnlyList<Arm> Arms { get; init; }
+    }
+
+    public class Finger
+    {
+        public System.Guid Id { get; init; }
+        public string DigitName { get; init; }
+        public IReadOnlyList<Hand> Hands { get; init; }
+    }
 }

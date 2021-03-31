@@ -8,10 +8,12 @@ namespace types
     {
         public static IReadOnlyList<Arm> Arms(int quantity)
         {
-            return Enumerable.Range(0, quantity).Select(_ => new Arm(
-                Id: Guid.NewGuid(), 
-                Length: NumberGenerator.NextDouble() * 10.0,
-                Hands: Hands(2))).ToArray();
+            return Enumerable.Range(0, quantity).Select(_ => 
+                new Arm {
+                    Id = Guid.NewGuid(), 
+                    Length = NumberGenerator.NextDouble() * 10.0,
+                    Hands = Hands(2)
+                }).ToArray();
         }
         
         public static IReadOnlyList<Hand> Hands(int quantity)
@@ -19,20 +21,19 @@ namespace types
             return Enumerable.Range(0, quantity).Select(_ =>
             {
                 var number = NumberGenerator.NextDouble();
-                return new Hand(
-                    Id: Guid.NewGuid(), 
-                    Chirality: number > 0.5 ? Chirality.Left : Chirality.Right,
-                    Fingers: Fingers(5));
+                return new Hand
+                {
+                    Id = Guid.NewGuid(), 
+                    Chirality = number > 0.5 ? Chirality.Left : Chirality.Right,
+                    Fingers = Fingers(5)
+                };
             }).ToArray();
         }
         
         public static IReadOnlyList<Finger> Fingers(int quantity)
         {
-            return Enumerable.Range(0, quantity).Select(_ =>
-            {
-                var number = NumberGenerator.NextDouble();
-                return new Finger(Id: Guid.NewGuid(), DigitName: DigitName());
-            }).ToArray();
+            return Enumerable.Range(0, quantity).Select(_ => 
+                new Finger {Id = Guid.NewGuid(), DigitName = DigitName()}).ToArray();
         }
 
         private static string DigitName()

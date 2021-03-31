@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MightyTests", "MightyTests\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "types", "types\types.csproj", "{8E9BC04B-674F-4789-8478-63C50F3E92C7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityFramework", "EntityFramework\EntityFramework.csproj", "{43607162-F960-46E8-9CA3-6E560A816C6B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{8E9BC04B-674F-4789-8478-63C50F3E92C7}.Release|x64.Build.0 = Release|Any CPU
 		{8E9BC04B-674F-4789-8478-63C50F3E92C7}.Release|x86.ActiveCfg = Release|Any CPU
 		{8E9BC04B-674F-4789-8478-63C50F3E92C7}.Release|x86.Build.0 = Release|Any CPU
+		{43607162-F960-46E8-9CA3-6E560A816C6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43607162-F960-46E8-9CA3-6E560A816C6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43607162-F960-46E8-9CA3-6E560A816C6B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{43607162-F960-46E8-9CA3-6E560A816C6B}.Debug|x64.Build.0 = Debug|Any CPU
+		{43607162-F960-46E8-9CA3-6E560A816C6B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{43607162-F960-46E8-9CA3-6E560A816C6B}.Debug|x86.Build.0 = Debug|Any CPU
+		{43607162-F960-46E8-9CA3-6E560A816C6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43607162-F960-46E8-9CA3-6E560A816C6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43607162-F960-46E8-9CA3-6E560A816C6B}.Release|x64.ActiveCfg = Release|Any CPU
+		{43607162-F960-46E8-9CA3-6E560A816C6B}.Release|x64.Build.0 = Release|Any CPU
+		{43607162-F960-46E8-9CA3-6E560A816C6B}.Release|x86.ActiveCfg = Release|Any CPU
+		{43607162-F960-46E8-9CA3-6E560A816C6B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
